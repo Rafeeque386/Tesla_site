@@ -4,6 +4,9 @@ import './header.css';
 const Header: React.FC = () => {
     return (
         <header>
+            <div className="logo">
+                <img src="/src/assets/tesla-text-logo.svg" className='image-size' alt="logo" />
+            </div>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>

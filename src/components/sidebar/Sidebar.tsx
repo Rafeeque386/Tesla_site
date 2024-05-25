@@ -7,14 +7,29 @@ const Sidebar: React.FC = () => {
         setIsOpen(!isOpen);
     };
 
+    const closeSidebar = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        toggleSidebar()
+    };
+
     return (
         <div>
-            <button className="sidebar-toggle" onClick={toggleSidebar}>
+            <button className={`sidebar-toggle ${!isOpen ? 'show' : 'hide'}`} onClick={toggleSidebar}>
                 &#9776;
             </button>
 
+
+
             <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-                <ul>
+                <span className="sidebar-close" onClick={closeSidebar}>
+                    &times;
+                </span>
+
+                <div className="sidebar-header">
+                    <img src="/src/assets/tesla-text-logo.svg" className='image-size' alt="logo" />
+
+                </div>
+                <ul className="sidebar-menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Products</a></li>
