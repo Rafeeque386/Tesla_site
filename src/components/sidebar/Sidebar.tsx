@@ -14,7 +14,7 @@ const Sidebar: React.FC = () => {
 
     return (
         <div>
-            <button className={`sidebar-toggle ${!isOpen ? 'show' : 'hide'}`} onClick={toggleSidebar}>
+            <button type='button' className={`sidebar-toggle ${!isOpen ? 'show' : 'hide'}`} onClick={toggleSidebar}>
                 &#9776;
             </button>
 

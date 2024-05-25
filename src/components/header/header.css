@@ -1,12 +1,12 @@
 /* Header menu styles */
 header {
-  height: 80px; /* Set a fixed height for the header */
-  background-color: #333; /* Dark background color */
+  height: 80px; 
+  /* background-color: #333;  */
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 
 .logo img {
@@ -28,8 +28,9 @@ nav li {
 nav a {
   color: #fff;
   text-decoration: none;
-  font-size: 16px; /* Font size for menu items */
+  font-size: 1.2rem; 
   transition: color 0.3s ease;
+  /* font-weight: 400; */
 }
 
 nav a:hover {
@@ -42,9 +43,7 @@ nav a:hover {
     height: 60px; /* Adjust header height for smaller screens */
   }
 
-  .logo img {
-    max-height: 40px; /* Adjust image height for smaller screens */
-  }
+ 
 
   nav li {
     margin-left: 1.5rem; /* Adjusted margin for smaller screens */
@@ -60,9 +59,6 @@ nav a:hover {
     height: 60px; /* Adjust header height for smaller screens */
   }
 
-  .logo img {
-    max-height: 40px; /* Adjust image height for smaller screens */
-  }
 
   nav li {
     margin-left: 1.5rem;
