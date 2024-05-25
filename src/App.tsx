@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css'
 import Layout from "./components/layout/Layout";
-import LandingPage from "./components/landingPage.tsx/Landing";
-import Product from "./pages/product/Product";
+import LandingPage from "./pages/landingPage.tsx/Landing";
+import Product from "./pages/Models/Model";
 
 function App() {
 

@@ -1,0 +1,46 @@
+/* Model page styles */
+.model-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .model-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .model-section:nth-child(1) {
+    background-image: url('/src/assets/model-s.jpg');
+  }
+  
+  .model-section:nth-child(2) {
+    background-image: url('/src/assets/model-3.jpg');
+  }
+  
+  .model-section:nth-child(3) {
+    background-image: url('/src/assets/model-x.jpg');
+  }
+  
+  .model-section:nth-child(4) {
+    background-image: url('/src/assets/model-y.jpg');
+  }
+  
+  .model-section h1 {
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Remove the previous styles */
+  main,
+  section,
+  button {
+    display: none;
+  }

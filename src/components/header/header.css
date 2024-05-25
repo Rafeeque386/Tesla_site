@@ -1,17 +1,16 @@
-/* Header menu styles */
 header {
   height: 80px; 
-  /* background-color: #333;  */
+  background-color: #333; 
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0 20px; */
+  padding: 0 20px;
 }
 
 .logo img {
-  max-height: 100px; /* Limit the maximum height of the logo image */
-  width: auto; /* Maintain aspect ratio */
+  max-height: 100px;
+  width: auto; 
 }
 
 nav ul {
@@ -22,7 +21,7 @@ nav ul {
 }
 
 nav li {
-  margin-left: 20px; /* Adjust margin between menu items */
+  margin-left: 20px; 
 }
 
 nav a {
@@ -30,33 +29,32 @@ nav a {
   text-decoration: none;
   font-size: 1.2rem; 
   transition: color 0.3s ease;
-  /* font-weight: 400; */
 }
 
 nav a:hover {
-  color: #ccc; /* Hover color for menu items */
+  color: #ccc;
 }
 
 @media (max-width: 768px) {
   header {
     padding: 0.75rem;
-    height: 60px; /* Adjust header height for smaller screens */
+    height: 60px; 
   }
 
  
 
   nav li {
-    margin-left: 1.5rem; /* Adjusted margin for smaller screens */
+    margin-left: 1.5rem;
   }
 
   nav a {
-    font-size: 1rem; /* Font size for smaller screens */
+    font-size: 1rem; 
   }
 }
 @media (max-width: 768px) {
   header {
     padding: 0.75rem;
-    height: 60px; /* Adjust header height for smaller screens */
+    height: 60px;
   }
 
 
@@ -71,10 +69,10 @@ nav a:hover {
 
 @media (max-width: 480px) {
   header {
-    display: none; /* Hide the header on mobile devices */
+    display: none; 
   }
 
   nav {
-    display: none; /* Hide the navigation on mobile devices */
+    display: none; 
   }
 }
