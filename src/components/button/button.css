@@ -1,0 +1,52 @@
+/* TeslaButton.css */
+.tesla-button-primary {
+    background-color: #fdfafa;
+    color: #0a0101;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.tesla-button-secondary {
+    background-color: #3a3a3a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tesla-button:hover {
+    background-color: #4c4c4c52;
+}
+
+.tesla-button:disabled {
+    background-color: #6c6c6c;
+    cursor: not-allowed;
+}
+
+.tesla-button .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tesla-button .spinner {
+    border: 4px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

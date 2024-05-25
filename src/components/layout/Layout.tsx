@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import Header from '../header/Header';
-import Footer from '../footer/Footer';
+// import Footer from '../footer/Footer';
 import './layout.css';
 import Sidebar from '../sidebar/Sidebar';
 
@@ -14,7 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <Header />
             <Sidebar />
             <div className="content-container">{children}</div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };

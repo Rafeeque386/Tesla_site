@@ -1,11 +1,13 @@
 header {
-  height: 80px; 
-  background-color: #333; 
+  background-color: transparent; 
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
 }
 
 .logo img {
@@ -36,27 +38,6 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
-  header {
-    padding: 0.75rem;
-    height: 60px; 
-  }
-
- 
-
-  nav li {
-    margin-left: 1.5rem;
-  }
-
-  nav a {
-    font-size: 1rem; 
-  }
-}
-@media (max-width: 768px) {
-  header {
-    padding: 0.75rem;
-    height: 60px;
-  }
-
 
   nav li {
     margin-left: 1.5rem;
