@@ -1,25 +1,23 @@
 /* TeslaButton.css */
+.tesla-button {
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 200px;
+}
+
 .tesla-button-primary {
     background-color: #fdfafa;
     color: #0a0101;
-    border: none;
-    border-radius: 5px;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
+
 .tesla-button-secondary {
     background-color: #3a3a3a;
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .tesla-button:hover {
