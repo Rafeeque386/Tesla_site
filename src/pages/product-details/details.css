@@ -48,6 +48,13 @@
   cursor: pointer;
 }
 
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
 @media (max-width: 768px) {
   .car-details-container {
     flex-direction: column;

@@ -5,6 +5,7 @@ import './product-list.css';
 import Pagination from '@components/pagination/Pagination';
 import { useNavigate } from 'react-router-dom';
 import { useCars } from '@/hooks/usecarHook';
+import { ClipLoader } from 'react-spinners';
 
 export const TeslaProductGrid: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -13,7 +14,11 @@ export const TeslaProductGrid: React.FC = () => {
   const { data, isLoading, error } = useCars();
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="loader-container">
+        <ClipLoader color="#007bff" size={50} />
+      </div>
+    );
   }
 
   if (error) {

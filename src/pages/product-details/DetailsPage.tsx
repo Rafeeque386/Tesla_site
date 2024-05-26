@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowCircleLeft } from 'react-icons/fa';
 import { useCarById } from '@/hooks/usecarByIdHook';
+import { ClipLoader } from 'react-spinners';
 
 const DetailsPage: React.FC = () => {
   const { id } = useParams();
@@ -18,7 +19,11 @@ const DetailsPage: React.FC = () => {
   const { data: carDetails, isLoading, error } = useCarById(carId);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="loader-container">
+        <ClipLoader color="#007bff" size={50} />
+      </div>
+    );
   }
 
   if (error) {
