@@ -1,9 +1,9 @@
 import React from 'react';
-import './product.css'
+import './landing-page.css'
 import TeslaButton from '../../components/button/Button';
 import Model from '../../components/model/ModelComponent';
 
-export const Product: React.FC = () => {
+export const LandingPage: React.FC = () => {
     const models = [
         {
             title: 'Model S',
