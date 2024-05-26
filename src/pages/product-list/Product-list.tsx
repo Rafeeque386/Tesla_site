@@ -1,10 +1,9 @@
-// TeslaProductGrid.js
 import React, { useState } from 'react';
-import TeslaCarCard from '../../components/cards/Cards';
-import { ICard } from '../../interfaces/model';
+import TeslaCarCard from '@components/cards/Cards';
+import { ICard } from '@interfaces/model';
 import { teslaCars } from './data';
 import './product-list.css'
-import Pagination from '../../components/pagination/Pagination';
+import Pagination from '@components/pagination/Pagination';
 
 export const TeslaProductGrid: React.FC = () => {
     const [currentPage, setCurrentPage] = useState(1);

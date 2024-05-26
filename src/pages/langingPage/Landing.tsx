@@ -1,7 +1,7 @@
 import React from 'react';
 import './landing-page.css'
-import TeslaButton from '../../components/button/Button';
-import Model from '../../components/model/ModelComponent';
+import TeslaButton from '@components/button/Button';
+import Model from '@components/model/ModelComponent';
 
 export const LandingPage: React.FC = () => {
     const models = [
