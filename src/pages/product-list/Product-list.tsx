@@ -1,21 +1,30 @@
 import React, { useState } from 'react';
 import TeslaCarCard from '@components/cards/Cards';
 import { ICard } from '@interfaces/model';
-import { teslaCars } from './data';
 import './product-list.css';
 import Pagination from '@components/pagination/Pagination';
 import { useNavigate } from 'react-router-dom';
+import { useCars } from '@/hooks/usecarHook';
 
 export const TeslaProductGrid: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [carsPerPage] = useState(3);
   const navigate = useNavigate();
+  const { data, isLoading, error } = useCars();
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
 
   const indexOfLastCar = currentPage * carsPerPage;
   const indexOfFirstCar = indexOfLastCar - carsPerPage;
-  const currentCars = teslaCars.slice(indexOfFirstCar, indexOfLastCar);
+  const currentCars = data?.slice(indexOfFirstCar, indexOfLastCar) || [];
 
-  const totalPages = Math.ceil(teslaCars.length / carsPerPage);
+  const totalPages = (data && Math.ceil(data.length / carsPerPage)) || 0;
 
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 

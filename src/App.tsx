@@ -5,22 +5,26 @@ import { LandingPage } from '@pages/langingPage/Landing';
 import { TeslaProductGrid } from '@pages/product-list/Product-list';
 import { WildcardPage } from '@pages/wildcard-page/Wildcard';
 import DetailsPage from '@pages/product-details/DetailsPage';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 function App() {
+  const queryClient = new QueryClient();
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<LandingPage />} />
-          <Route path="home" element={<LandingPage />} />
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<LandingPage />} />
+            <Route path="home" element={<LandingPage />} />
 
-          <Route path="products" element={<TeslaProductGrid />} />
+            <Route path="products" element={<TeslaProductGrid />} />
 
-          <Route path="details/:id" element={<DetailsPage />} />
-          <Route path="*" element={<WildcardPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+            <Route path="details/:id" element={<DetailsPage />} />
+            <Route path="*" element={<WildcardPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </QueryClientProvider>
   );
 }
 
