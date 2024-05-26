@@ -1,0 +1,10 @@
+{
+    "endOfLine": "auto",
+    "newline-before-return": true,
+    "no-duplicate-variable": [false, "check-parameters"],
+    "no-var-keyword": true,
+    "printWidth": 100,
+    "singleQuote": true,
+    "tabWidth": 2
+}
+  

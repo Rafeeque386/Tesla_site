@@ -1,5 +1,5 @@
 header {
-  background-color:  rgba(57, 51, 51, 0.581);
+  background-color: rgba(57, 51, 51, 0.581);
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,7 @@ header {
 
 .logo img {
   max-height: 100px;
-  width: auto; 
+  width: auto;
   margin-left: 10px;
 }
 
@@ -23,13 +23,13 @@ nav ul {
 }
 
 nav li {
-  margin-left: 20px; 
+  margin-left: 20px;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
@@ -38,7 +38,6 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
-
   nav li {
     margin-left: 1.5rem;
   }
@@ -50,10 +49,10 @@ nav a:hover {
 
 @media (max-width: 480px) {
   header {
-    display: none; 
+    display: none;
   }
 
   nav {
-    display: none; 
+    display: none;
   }
 }
