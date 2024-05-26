@@ -7,7 +7,14 @@ export const teslaCars = [
       price: "$79,990",
       range: "412",
       topSpeed: "155",
-      acceleration: "3.1"
+      acceleration: "3.1",
+      images: {
+        red: "/src/assets/red-tesla.jpg",
+        black: "/src/assets/black-tesla.jpg",
+        blue: "/src/assets/blue-tesla.jpg",
+        white: "/src/assets/white-tesla.jpg",
+        grey: "/src/assets/grey-tesla.jpg"
+      },
     },
     {
       id: 2,
@@ -17,7 +24,14 @@ export const teslaCars = [
       price: "$39,990",
       range: "263",
       topSpeed: "140",
-      acceleration: "5.3"
+      acceleration: "5.3",
+      images: {
+        red: "/src/assets/red-tesla.jpg",
+        black: "/src/assets/black-tesla.jpg",
+        blue: "/src/assets/blue-tesla.jpg",
+        white: "/src/assets/white-tesla.jpg",
+        grey: "/src/assets/grey-tesla.jpg"
+      },
     },
     {
       id: 3,
@@ -27,7 +41,14 @@ export const teslaCars = [
       price: "$89,990",
       range: "360",
       topSpeed: "155",
-      acceleration: "4.4"
+      acceleration: "4.4",
+      images: {
+        red: "/src/assets/red-tesla.jpg",
+        black: "/src/assets/black-tesla.jpg",
+        blue: "/src/assets/blue-tesla.jpg",
+        white: "/src/assets/white-tesla.jpg",
+        grey: "/src/assets/grey-tesla.jpg"
+      },
     },
     {
       id: 4,
@@ -37,7 +58,14 @@ export const teslaCars = [
       price: "$49,990",
       range: "326",
       topSpeed: "135",
-      acceleration: "4.8"
+      acceleration: "4.8",
+      images: {
+        red: "/src/assets/red-tesla.jpg",
+        black: "/src/assets/black-tesla.jpg",
+        blue: "/src/assets/blue-tesla.jpg",
+        white: "/src/assets/white-tesla.jpg",
+        grey: "/src/assets/grey-tesla.jpg"
+      },
     },
     {
         id: 5,
@@ -47,7 +75,14 @@ export const teslaCars = [
         price: "$89,990",
         range: "360",
         topSpeed: "155",
-        acceleration: "4.4"
+        acceleration: "4.4",
+        images: {
+          red: "/src/assets/red-tesla.jpg",
+          black: "/src/assets/black-tesla.jpg",
+          blue: "/src/assets/blue-tesla.jpg",
+          white: "/src/assets/white-tesla.jpg",
+          grey: "/src/assets/grey-tesla.jpg"
+        },
       },
       {
         id: 6,
@@ -57,7 +92,14 @@ export const teslaCars = [
         price: "$49,990",
         range: "326",
         topSpeed: "135",
-        acceleration: "4.8"
+        acceleration: "4.8",
+        images: {
+          red: "/src/assets/red-tesla.jpg",
+          black: "/src/assets/black-tesla.jpg",
+          blue: "/src/assets/blue-tesla.jpg",
+          white: "/src/assets/white-tesla.jpg",
+          grey: "/src/assets/grey-tesla.jpg"
+        },
       },
       {
         id: 7,
@@ -67,7 +109,14 @@ export const teslaCars = [
         price: "$89,990",
         range: "360",
         topSpeed: "155",
-        acceleration: "4.4"
+        acceleration: "4.4",
+        images: {
+          red: "/src/assets/red-tesla.jpg",
+          black: "/src/assets/black-tesla.jpg",
+          blue: "/src/assets/blue-tesla.jpg",
+          white: "/src/assets/white-tesla.jpg",
+          grey: "/src/assets/grey-tesla.jpg"
+        },
       },
       {
         id: 8,
@@ -77,7 +126,14 @@ export const teslaCars = [
         price: "$49,990",
         range: "326",
         topSpeed: "135",
-        acceleration: "4.8"
+        acceleration: "4.8",
+        images: {
+          red: "/src/assets/red-tesla.jpg",
+          black: "/src/assets/black-tesla.jpg",
+          blue: "/src/assets/blue-tesla.jpg",
+          white: "/src/assets/white-tesla.jpg",
+          grey: "/src/assets/grey-tesla.jpg"
+        },
       }
   ];
   
