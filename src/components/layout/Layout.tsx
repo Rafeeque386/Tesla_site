@@ -3,9 +3,10 @@ import Header from '../header/Header';
 // import Footer from '../footer/Footer';
 import './layout.css';
 import Sidebar from '../sidebar/Sidebar';
+import { Outlet } from 'react-router-dom';
 
 interface LayoutProps {
-    children: ReactNode;
+    children?: ReactNode;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
@@ -13,7 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="layout-container">
             <Header />
             <Sidebar />
-            <div className="content-container">{children}</div>
+            <div className="content-container"><Outlet /></div>
             {/* <Footer /> */}
         </div>
     );

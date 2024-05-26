@@ -4,13 +4,13 @@ import { Outlet } from 'react-router-dom';
 
 const LandingPage: React.FC = () => {
     return (
-        <div>
 
 
-            <Outlet />
+
+        <Outlet />
 
 
-        </div>
+
     );
 };
 

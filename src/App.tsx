@@ -3,6 +3,7 @@ import './App.css'
 import Layout from "./components/layout/Layout";
 import LandingPage from "./pages/landingPage.tsx/Landing";
 import { Product } from "./pages/Product/Product";
+import { TeslaProductGrid } from "./pages/product-list/Product-list";
 
 function App() {
 
@@ -12,22 +13,41 @@ function App() {
         <Route
           path="/"
           element={
-            <Layout>
-              <LandingPage />
-            </Layout>
+            <Layout />
+
+
           }
 
         >
 
           <Route
             index
+
             element={
 
               <Product />
 
             }
           />
+          <Route
+            path="home"
+
+            element={
+
+              <Product />
+
+            }
+          />
+
+          <Route
+            path="products"
+            element={
+              <TeslaProductGrid />
+
+            }
+          />
         </Route>
+
 
       </Routes>
     </BrowserRouter>

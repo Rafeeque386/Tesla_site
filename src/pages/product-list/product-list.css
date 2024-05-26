@@ -1,0 +1,57 @@
+
+.tesla-product-grid {
+    background-image: url('/src/assets/tesla-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 10px;
+}
+.product-content-wrap{
+    height: calc(100vh - 50px);
+    margin-top: 50px;
+    overflow-y: auto;
+
+}
+
+.tesla-car-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    
+}
+
+.tesla-car-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+   
+}
+
+.tesla-car-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    height: 60%;
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .tesla-car-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tesla-car-grid {
+        grid-template-columns: 1fr; 
+
+    }
+}
