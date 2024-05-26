@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-// import { useParams } from 'react-router-dom';
 import { teslaCars } from '../product-list/data';
 import './details.css';
 import { CarColorPicker } from '@/components/colorSelector/Selector';
 import { ICarImages, ICard } from '@/interfaces/model';
+import { useParams } from 'react-router-dom';
 
 const DetailsPage: React.FC = () => {
-  // const { id } = useParams();
-  const id = 1;
+  const { id } = useParams();
+  const parsedId = id ? parseInt(id, 10) : undefined;
   const [selectedColor, setSelectedColor] = useState<keyof ICarImages>('red');
 
-  const car: ICard | undefined = teslaCars.find((c) => c.id === id);
+  const car: ICard | undefined = teslaCars.find((c) => c.id === parsedId);
 
   const handleColorChange = (color: keyof ICarImages) => {
     setSelectedColor(color);

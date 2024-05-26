@@ -4,10 +4,12 @@ import { ICard } from '@interfaces/model';
 import { teslaCars } from './data';
 import './product-list.css';
 import Pagination from '@components/pagination/Pagination';
+import { useNavigate } from 'react-router-dom';
 
 export const TeslaProductGrid: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [carsPerPage] = useState(3);
+  const navigate = useNavigate();
 
   const indexOfLastCar = currentPage * carsPerPage;
   const indexOfFirstCar = indexOfLastCar - carsPerPage;
@@ -17,12 +19,16 @@ export const TeslaProductGrid: React.FC = () => {
 
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
+  const onHandleCard = (id: number) => {
+    navigate(`/details/${id}`);
+  };
+
   return (
     <div className="tesla-product-grid">
       <div className="product-content-wrap">
         <div className="tesla-car-grid">
           {currentCars.map((car: ICard) => (
-            <TeslaCarCard key={car.id} car={car} />
+            <TeslaCarCard key={car.id} car={car} onHandleClick={(id) => onHandleCard(id)} />
           ))}
         </div>
         <Pagination currentPage={currentPage} totalPages={totalPages} paginate={paginate} />
