@@ -5,7 +5,7 @@ import './details.css'
 import { CarColorPicker } from '@/components/colorSelector/Selector';
 import { ICarImages, ICard } from '@/interfaces/model';
 
-const CarDetailsPage: React.FC = () => {
+const DetailsPage: React.FC = () => {
     // const { id } = useParams();
     const id = 1
     const [selectedColor, setSelectedColor] = useState<keyof ICarImages>('red');
@@ -45,4 +45,4 @@ const CarDetailsPage: React.FC = () => {
     );
 };
 
-export default CarDetailsPage;
+export default DetailsPage;

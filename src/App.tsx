@@ -3,8 +3,8 @@ import './App.css'
 import Layout from "@components/layout/Layout";
 import { LandingPage } from "@pages/langingPage/Landing";
 import { TeslaProductGrid } from "@pages/product-list/Product-list";
-import { WildcardPage } from "./pages/wildcard-page/Wildcard";
-import CarDetailsPage from "./pages/product-details/DetailsPage";
+import { WildcardPage } from "@pages/wildcard-page/Wildcard";
+import DetailsPage from "@pages/product-details/DetailsPage";
 
 function App() {
 
@@ -50,7 +50,7 @@ function App() {
           <Route
             path="details"
             element={
-              <CarDetailsPage />
+              <DetailsPage />
 
             }
           />

@@ -1,7 +1,7 @@
 .car-color-picker {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     margin-top: 20px;
   }
   
