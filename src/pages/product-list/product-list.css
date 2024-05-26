@@ -1,8 +1,8 @@
 
 .tesla-product-grid {
-    background-image: url('/src/assets/tesla-bg.jpg'); 
+    /* background-image: url('/src/assets/tesla-bg.jpg'); 
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Sidebar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ const Sidebar: React.FC = () => {
 
     const closeSidebar = (e: React.MouseEvent) => {
         e.stopPropagation();
-        toggleSidebar()
+        toggleSidebar();
     };
 
     return (
@@ -18,22 +19,21 @@ const Sidebar: React.FC = () => {
                 &#9776;
             </button>
 
-
-
             <div className={`sidebar ${isOpen ? 'open' : ''}`}>
                 <span className="sidebar-close" onClick={closeSidebar}>
                     &times;
                 </span>
 
                 <div className="sidebar-header">
-                    <img src="/src/assets/tesla-text-logo.svg" className='image-size' alt="logo" />
-
+                    <Link to="/">
+                        <img src="/src/assets/tesla-text-logo.svg" className='image-size' alt="logo" />
+                    </Link>
                 </div>
                 <ul className="sidebar-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/products">Products</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
         </div>

@@ -4,6 +4,7 @@ import Layout from "@components/layout/Layout";
 import { LandingPage } from "@pages/langingPage/Landing";
 import { TeslaProductGrid } from "@pages/product-list/Product-list";
 import { WildcardPage } from "./pages/wildcard-page/Wildcard";
+import CarDetailsPage from "./pages/product-details/DetailsPage";
 
 function App() {
 
@@ -43,6 +44,13 @@ function App() {
             path="products"
             element={
               <TeslaProductGrid />
+
+            }
+          />
+          <Route
+            path="details"
+            element={
+              <CarDetailsPage />
 
             }
           />
