@@ -1,0 +1,42 @@
+
+.wildcard-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+  }
+  
+  .icon {
+    font-size: 3rem;
+    color: #ff6347;
+  }
+  
+  .wildcard-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .wildcard-text {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+  }
+
+  .go-home-button {
+    background-color: #ff6347; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .go-home-button:hover {
+    background-color: #e55a3f;
+  }

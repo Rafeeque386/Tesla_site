@@ -3,6 +3,7 @@ import './App.css'
 import Layout from "@components/layout/Layout";
 import { LandingPage } from "@pages/langingPage/Landing";
 import { TeslaProductGrid } from "@pages/product-list/Product-list";
+import { WildcardPage } from "./pages/wildcard-page/Wildcard";
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
 
             }
           />
+          <Route path="*" element={<WildcardPage />} />
         </Route>
 
 
