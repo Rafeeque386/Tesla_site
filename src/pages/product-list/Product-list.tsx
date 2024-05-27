@@ -6,6 +6,7 @@ import Pagination from '@components/pagination/Pagination';
 import { useNavigate } from 'react-router-dom';
 import { useGetAllCars } from '@hooks/queries/useCarQueries';
 import { ClipLoader } from 'react-spinners';
+import Toast from '@/components/toast/toast';
 
 export const TeslaProductGrid: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -22,8 +23,10 @@ export const TeslaProductGrid: React.FC = () => {
   }
 
   if (error) {
-    return <div>Error: {error.message}</div>;
+    return <Toast type="error" message={error.message} />;
   }
+
+  // handle pagination from FE since API doesn't support
 
   const indexOfLastCar = currentPage * carsPerPage;
   const indexOfFirstCar = indexOfLastCar - carsPerPage;

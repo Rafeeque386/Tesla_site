@@ -7,11 +7,14 @@ import { WildcardPage } from '@pages/wildcard-page/Wildcard';
 import DetailsPage from '@pages/product-details/DetailsPage';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ROUTE_CONSTANTS } from '@constants/routeConstants';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const queryClient = new QueryClient();
   return (
     <QueryClientProvider client={queryClient}>
+      <ToastContainer />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>

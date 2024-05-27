@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaArrowCircleLeft } from 'react-icons/fa';
 import { useGetCarById } from '@/hooks/queries/useCarQueries';
 import { ClipLoader } from 'react-spinners';
+import Toast from '@/components/toast/toast';
 
 const DetailsPage: React.FC = () => {
   const { id } = useParams();
@@ -25,7 +26,7 @@ const DetailsPage: React.FC = () => {
   }
 
   if (error) {
-    return <div>Error: {error.message}</div>;
+    return <Toast type="error" message={error.message} />;
   }
 
   const handleColorChange = (color: keyof ICarImages) => {
