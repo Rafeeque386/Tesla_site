@@ -5,7 +5,7 @@ import { ICarImages } from '@/interfaces/model';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowCircleLeft } from 'react-icons/fa';
-import { useCarById } from '@/hooks/usecarByIdHook';
+import { useGetCarById } from '@/hooks/queries/useCarQueries';
 import { ClipLoader } from 'react-spinners';
 
 const DetailsPage: React.FC = () => {
@@ -14,9 +14,7 @@ const DetailsPage: React.FC = () => {
   const [selectedColor, setSelectedColor] = useState<keyof ICarImages>('red');
   const navigate = useNavigate();
 
-  // const car: ICard | undefined = teslaCars.find((c) => c.id === parsedId);
-
-  const { data: carDetails, isLoading, error } = useCarById(carId);
+  const { data: carDetails, isLoading, error } = useGetCarById(carId);
 
   if (isLoading) {
     return (
@@ -35,11 +33,15 @@ const DetailsPage: React.FC = () => {
   };
 
   const goBack = () => {
-    navigate(-1); // Simulate going back by navigating with a negative delta
+    navigate(-1);
   };
 
   if (!carDetails || !carDetails.images) {
-    return <div>Loading...</div>;
+    return (
+      <div className="loader-container">
+        <ClipLoader color="#007bff" size={50} />
+      </div>
+    );
   }
 
   return (

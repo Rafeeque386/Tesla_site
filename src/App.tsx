@@ -6,7 +6,7 @@ import { TeslaProductGrid } from '@pages/product-list/Product-list';
 import { WildcardPage } from '@pages/wildcard-page/Wildcard';
 import DetailsPage from '@pages/product-details/DetailsPage';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ROUTE_CONSTANTS } from './constants/routeConstants';
+import { ROUTE_CONSTANTS } from '@constants/routeConstants';
 
 function App() {
   const queryClient = new QueryClient();

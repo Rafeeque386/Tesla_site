@@ -4,14 +4,14 @@ import { ICard } from '@interfaces/model';
 import './product-list.css';
 import Pagination from '@components/pagination/Pagination';
 import { useNavigate } from 'react-router-dom';
-import { useCars } from '@/hooks/usecarHook';
+import { useGetAllCars } from '@hooks/queries/useCarQueries';
 import { ClipLoader } from 'react-spinners';
 
 export const TeslaProductGrid: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [carsPerPage] = useState(3);
   const navigate = useNavigate();
-  const { data, isLoading, error } = useCars();
+  const { data, isLoading, error } = useGetAllCars();
 
   if (isLoading) {
     return (
