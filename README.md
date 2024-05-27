@@ -15,7 +15,7 @@ A React application built with Vite and TypeScript to showcase Tesla products.
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/tesla-product-showcase.git
+   git clone https://github.com/Rafeeque386/Tesla_site.git
    ```
 
 2. **Navigate to the project directory:**
