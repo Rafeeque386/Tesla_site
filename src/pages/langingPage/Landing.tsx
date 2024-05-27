@@ -27,11 +27,11 @@ export const LandingPage: React.FC = () => {
     },
   ];
   const handleOrderNow = () => {
-    console.log('test');
+    console.log('order');
   };
 
   const testDrive = () => {
-    console.log('test');
+    console.log('test drive');
   };
 
   return (

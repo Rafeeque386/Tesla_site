@@ -6,6 +6,7 @@ import { TeslaProductGrid } from '@pages/product-list/Product-list';
 import { WildcardPage } from '@pages/wildcard-page/Wildcard';
 import DetailsPage from '@pages/product-details/DetailsPage';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ROUTE_CONSTANTS } from './constants/routeConstants';
 
 function App() {
   const queryClient = new QueryClient();
@@ -15,12 +16,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<LandingPage />} />
-            <Route path="home" element={<LandingPage />} />
+            <Route path={ROUTE_CONSTANTS.HOME} element={<LandingPage />} />
 
-            <Route path="products" element={<TeslaProductGrid />} />
+            <Route path={ROUTE_CONSTANTS.PRODUCTS} element={<TeslaProductGrid />} />
 
-            <Route path="details/:id" element={<DetailsPage />} />
-            <Route path="*" element={<WildcardPage />} />
+            <Route path={`${ROUTE_CONSTANTS.DETAILS}/:id`} element={<DetailsPage />} />
+            <Route path={ROUTE_CONSTANTS.WILD_PATH} element={<WildcardPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

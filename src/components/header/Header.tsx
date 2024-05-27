@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
+import { ROUTE_CONSTANTS, ROUTE_MENU } from '@/constants/routeConstants';
 
 const Header: React.FC = () => {
   return (
@@ -13,16 +14,16 @@ const Header: React.FC = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">{ROUTE_MENU.HOME}</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to={`/${ROUTE_CONSTANTS.ABOUT}`}>{ROUTE_MENU.ABOUT}</Link>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            <Link to={`/${ROUTE_CONSTANTS.PRODUCTS}`}>{ROUTE_MENU.PRODUCTS}</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to={`/${ROUTE_CONSTANTS.CONTACT}`}>{ROUTE_MENU.CONTACT}</Link>
           </li>
         </ul>
       </nav>

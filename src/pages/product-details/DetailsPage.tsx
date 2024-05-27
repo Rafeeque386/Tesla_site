@@ -51,10 +51,7 @@ const DetailsPage: React.FC = () => {
 
       <div className="car-details-container">
         <div className="car-image">
-          <img
-            src={carDetails.images[selectedColor]}
-            alt={`${carDetails.name} in ${selectedColor.slice(1)}`}
-          />
+          <img src={carDetails.images[selectedColor]} alt={selectedColor} />
         </div>
         <div className="car-info">
           <h2>{carDetails.name}</h2>
