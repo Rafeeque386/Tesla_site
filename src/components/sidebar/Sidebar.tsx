@@ -10,7 +10,7 @@ const Sidebar: React.FC = () => {
   };
 
   const closeSidebar = (e: React.MouseEvent) => {
-    e.stopPropagation();
+    e.stopPropagation(); //handle event bubbling
     toggleSidebar();
   };
 
@@ -38,11 +38,12 @@ const Sidebar: React.FC = () => {
           <li>
             <Link to="/">{ROUTE_MENU.HOME}</Link>
           </li>
-          <li>
-            <Link to={`/${ROUTE_CONSTANTS.ABOUT}`}>{ROUTE_MENU.ABOUT}</Link>
-          </li>
+
           <li>
             <Link to={`/${ROUTE_CONSTANTS.PRODUCTS}`}>{ROUTE_MENU.PRODUCTS}</Link>
+          </li>
+          <li>
+            <Link to={`/${ROUTE_CONSTANTS.ABOUT}`}>{ROUTE_MENU.ABOUT}</Link>
           </li>
           <li>
             <Link to={`/${ROUTE_CONSTANTS.CONTACT}`}>{ROUTE_MENU.CONTACT}</Link>

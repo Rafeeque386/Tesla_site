@@ -17,11 +17,12 @@ const Header: React.FC = () => {
             <Link to="/">{ROUTE_MENU.HOME}</Link>
           </li>
           <li>
-            <Link to={`/${ROUTE_CONSTANTS.ABOUT}`}>{ROUTE_MENU.ABOUT}</Link>
-          </li>
-          <li>
             <Link to={`/${ROUTE_CONSTANTS.PRODUCTS}`}>{ROUTE_MENU.PRODUCTS}</Link>
           </li>
+          <li>
+            <Link to={`/${ROUTE_CONSTANTS.ABOUT}`}>{ROUTE_MENU.ABOUT}</Link>
+          </li>
+
           <li>
             <Link to={`/${ROUTE_CONSTANTS.CONTACT}`}>{ROUTE_MENU.CONTACT}</Link>
           </li>
